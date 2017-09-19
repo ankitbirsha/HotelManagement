@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>AAA GROUP OF HOTEL</title>
+    
+<style type="text/css">
+body{
+    background-image: url("ad.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-width:10px;
+    border-color:#69D2E7;
+    border-style:dotted groove;
+}
+</style>
+</head>
+<body><center>
+    	<h3>Reservation:</h3>
+<form method="post" action="viewavailablerooms.php">
+ <div class="box maxheight">
+               	<div class="inner">
+  <div align="center">
+  <table  class="tftable">
+    <tr><td width="120" height="61">Checkin Date<br/>
+<input type=date name="checkin_date" min="<?php  /*  Download projects from www.freestudentprojects.com */echo date("Y-m-d"); ?> </td>
+    </tr>
+      
+    <tr>
+      <td height="58">&nbsp;Checkout Date<br/>
+<input type=date name="check_out" min="<?php  /*  Download projects from www.freestudentprojects.com */echo date("Y-m-d"); ?>  </td>
+    </tr>
+    <tr>
+      <td height="58">&nbsp;No of persons<br/>
+&nbsp;<select name="nopersons">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="30">30</option>
+</select>
+</td>
+    </tr>
+    <tr><td height="58"> No. of Rooms<br />
+&nbsp;<input type="number" name="norooms"  min="1" max="10"/></td>
+</tr>
+          
+    <tr><td height="28" ><input type=submit name="submit" value="Check Availability" class="fsSubmitButton" ></th></tr>
+  </table>
+  </div>
+</form>
+<br />
+<div class="col-md-5 col-xs-8">
+				<p class="text-right"><a class="text-white" href="http://piccadilyhotels.com/sitemap.xml">Sitemap</a> | <a class="text-white" href="contact-us.php">Contact Us</a> | <a class="text-white" href="terms-and-conditions.php">Terms & Conditions</a> | <a class="text-white" href="privacy-policy.php">Privacy Policy</a> | <a class="text-white" href="reservation-policy.php">Reservation Policy</a></p>
+			</div>
+</body>
+</html>
